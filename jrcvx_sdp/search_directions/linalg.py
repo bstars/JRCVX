@@ -141,25 +141,10 @@ def symkro(A,B):
 	Q = generate_Q(n)
 	return 0.5 * Q.dot(AB + BA).dot(Q.transpose()).toarray()
 
-def generate_sym(n):
-	U = np.random.randint(1, 9, size=[n, n])
-	U = 0.5 * (U + U.T)
-	return U
 
 
 if __name__ == '__main__':
 
-	n = 2
-	U = generate_sym(5)
-	print(U)
-	v = svec(U)
-	U_ = svec_inv(v)
-	print(U_)
-
-
-
-
-
-
+	pass
 
 
